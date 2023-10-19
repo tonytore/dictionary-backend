@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+form{
+    margin-bottom: 30px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image: url('../images/Book.jpg');
+    padding-left: 50px;
+}
+
+.title{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 50px;
+    line-height: 40px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fbefc1;
+    color: #a59d82;
+}
+
+
+.formInput{
+margin-top: 36px;
+display:flex;
+justify-content: center;
+width: 100%;
+}
+
+
+
+.search{
+    display: flex;
+    align-items: flex-start;
+    font-weight: bold;
+    font-size: x-large;
+    color: #fbefc1;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding-left: 20px;
+
+}
+.btn{
+    width: 110px;
+    height: 50px;
+    font-weight: bold; 
+    font-size: x-large;
+    color: #a59d82;
+    background-color:#fbefc1;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color:#3d371e;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.result{
+    display: flex;
+    justify-content: flex-start;
+   margin-left: 650px;
+   color: #fbefc1;
+   font-weight: bold;
+    font-size: large;
+}
+
+.original{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+   margin-left: -400px;
+   color: #fbefc1;
+   font-weight: bold;
+    font-size: x-large;
+}

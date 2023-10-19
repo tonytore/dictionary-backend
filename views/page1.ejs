@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 1</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    
+</head>
+<body>
+
+    <main>
+
+        <div class="header">
+            <h1 class="title">The Online Dictionary</h1>
+        </div>
+      
+       <div class="formInput">
+        <input class="search" name="searchWord" type="text" placeholder="Enter the Word">
+        <button onclick="getMeaning(word, dictionary)" class="btn" type="submit" name="submit" value="word">Search</button>
+       </div>
+      
+           <h1 class="original">
+            <%= originalValue %>
+           </h1>
+
+          <p class="result">
+            <%= content %>
+          </p>
+    </main>
+
+</body>
+</html>
