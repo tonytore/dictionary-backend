@@ -1,3 +1,6 @@
-node_modules
-client
+/node_module
+node_module
 .env
+
+
+**node_modules
