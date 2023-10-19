@@ -1,15 +1,19 @@
-const express = require("express");
-const fs = require("fs");
-const bodyParser = require("body-parser");
-const ejs = require("ejs");
-const { log } = require("console");
-const cors = require("cors");
+const express = require('express') 
+const fs = require('fs') 
+const bodyParser = require('body-parser') 
+const cors = require('cors') 
+const dotenv = require('dotenv') 
+
+
 
 const app = express();
-app.set("view engine", "ejs");
-app.use(cors({
-  origin:["http://localhost:5000/","https://tonytore.github.io/dictionary-frontend/"]
-}));
+
+dotenv.config()
+app.use(cors())
+
+// app.use(cors({
+//   origin:["http://localhost:5000/","https://tonytore.github.io/dictionary-frontend/"]
+// }));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -32,14 +36,11 @@ app.get("/", (req, res) => {
   res.json({ dictionary });
 });
 
-// app.post('/',(req,res)=>{
-//   res.send('congrat')
-//   console.log(req.body.searchWord);
-// })
 
 
-app.listen(process.env.port, () => {
-  console.log(`server is connected on port ${process.env.port || 5000} `);
+
+app.listen(process.env.PORT, () => {
+  console.log(`server is connected on port ${process.env.PORT} `);
 });
 
 function loadDictionary(filename) {
